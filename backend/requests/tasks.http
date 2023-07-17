@@ -1,0 +1,55 @@
+@api = http://localhost:3000/devoluciones
+
+GET {{api}}
+
+###
+GET {{api}}/si
+
+###
+GET {{api}}/1804309837
+
+###
+GET  {{api}}/buscar/1801933415
+
+###
+GET {{api}}/count
+
+###
+POST {{api}}
+Content-Type: application/json
+
+{
+    "cedula_per": "1234234514",
+    "contrasenia_per": "12345",
+    "conf_contrasenia": "12345",
+    "nombre_per": "B", 
+    "apellido_per": "AB", 
+    "telefono_per": "111", 
+    "correo_per": "a@yata.ed", 
+    "direccion_per": "A", 
+    "rol_per": "tecnico"
+}
+
+###
+PUT {{api}}/11
+Content-Type: application/json
+
+{
+  "estado_dev": "funcional"     
+}
+
+###
+PUT {{api}}/delete/1804309838
+
+###
+PUT {{api}}/activate/1804309838
+
+
+###
+POST {{api}}/login
+Content-Type: application/json
+
+{
+  "cedula": "1804309838",
+  "contrasenia": "1234"
+}
